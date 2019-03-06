@@ -1,0 +1,47 @@
+page{
+    background-color: #f4f4f4
+}
+.body{
+  margin:8px;
+}
+.labname{
+  text-align:center;
+  font-size: 22px;
+  margin: 5px;
+}
+.details{
+  margin: 5px 8px;
+  font-size: 18px;
+}
+
+/*轮播图*/
+.swiper-contain{
+	width: 100%;
+	position: relative;
+}
+.swiper {
+	height: 200rpx;
+	width: 100%;
+}
+.swiper image {
+	height: 100%;
+	width: 100%;
+}
+.swiper-btn{
+	position: absolute;
+	top: 15rpx;
+	display: flex;
+	right: 30rpx;
+	font-size: 12pt;
+	color: #3d667a;
+}
+.swiper-btn .iconfont{
+	font-size: 18pt;
+	vertical-align: -7%;
+	margin-right: 3rpx;
+}
+.labbuilding{
+  font-size: 26rpx;
+  color: #ce1818;
+  margin-left: 500rpx;
+}

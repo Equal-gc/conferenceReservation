@@ -1,0 +1,118 @@
+page{
+    background-color: #f4f4f4;
+}
+.remind{
+	
+}
+.tab-h{
+	border-top: solid 0.5rpx #3d667a;
+    height: 93rpx;
+    line-height: 93rpx;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff; 
+    font-size: 16px; 
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 99;
+}
+
+.tab-item{
+	width: 33.333%;
+	text-align: center;
+	display: inline-block;
+	color: #535353;
+}
+.tab-item.active{
+	color: #3d667a;
+	position: relative;
+}
+.tab-item.active:after{ 	
+	content: "";
+	display: block;
+	height: 4rpx;
+	width: 100%;
+	background: #3d667a;
+	position: absolute; 
+	bottom: 3rpx;
+	left: 0%;
+	border-radius: 16rpx;
+}
+
+.tab-content{
+	margin-top: 93rpx;
+	padding: 0 24rpx;
+	background: #fff;
+}
+.scoll-h{
+	height: 100%;
+}
+
+.item{
+	position: relative;
+	padding: 24rpx 0 24rpx 61rpx;
+	border-bottom: 0.5rpx solid #ddd;
+}
+.item .iconfont{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 34rpx;
+}
+.item .title{
+	font-size: 30rpx;
+	color: #535353;
+	line-height: 48rpx;
+}
+
+.item .time{
+	font-size: 28rpx;
+	color: #7d7d7d;
+	margin: 10rpx 0;
+}
+
+.item .countDown{
+	font-size: 28rpx;
+	color: #e0c788;
+}
+
+.item .countDown i{
+	color: #3d667a;
+}
+
+/*footer*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 88rpx;
+	line-height: 88rpx;
+	font-size: 30rpx;
+	display: flex;
+	background: #fff;
+	width: 100%;
+	border-top: 1rpx solid #ddd;
+}
+.footer .checkAll{
+	flex: 1;
+	color: #979797;
+}
+.footer .checkAll .iconfont{
+	font-size: 34rpx;
+	margin-right: 15rpx;
+	padding-left: 24rpx;
+}
+.footer .cancel{
+	width: 180rpx;
+	text-align: center;
+	background: #3d667a;
+	color: #fff;
+}
+
+.icon-circle-checked{
+	color: #3d667a;
+}

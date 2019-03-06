@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="container-home">
+        <!-- 轮播图 -->
+        <view class="swiper-contain">
+        	<swiper 
+        		class="swiper" 
+        		indicator-dots="true" 
+        		autoplay="true" 
+        		interval="3000" 
+        		duration="1000"
+    		>    
+    	        <block wx:for="{{advs}}" wx:key="unique">    
+    		        <swiper-item>    
+    		            <image 
+                            src="{{item}}" class="slide-image image_pic" 
+                            mode="aspectFill"
+                        /> 
+    		        </swiper-item>    
+    	        </block> 
+    	    </swiper>
+        </view>
+
+        <view class="order-link-contain">
+            <view class="space item" bindtap="createOrder" data-name="space">
+                <image 
+                    src='../../../resource/images/space.png' class="slide-image image_pic" 
+                    mode="aspectFill"
+                    class="img"
+                />
+                <view class="text">预约规则</view>
+            </view>
+            <view class="seat item" bindtap="createOrder" data-name="seat">
+                <image 
+                    src='../../../resource/images/seat.png' class="slide-image image_pic" 
+                    mode="aspectFill"
+                    class="img"
+                />
+                <view class="text">预约</view>
+            </view>
+            <view class="lecture item" bindtap="createOrder" data-name="lecture">
+                <image 
+                    src='../../../resource/images/jiangzuo.png' class="slide-image image_pic" 
+                    mode="aspectFill"
+                    class="img"
+                />
+                <view class="text">实验室概况</view>
+            </view>
+        </view>
+
+        <view class="notice-contain">
+            <view class="title">最新公告</view>
+            <view class="list">
+                <view class="item" wx:for="{{noticeList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    {{item.announcementtime}}：【{{item.announcementtitle}}】<view class="itemdetail" bindtap="announcementdetail" id="{{item.id}}">查看详情>></view>
+                </view>
+                <view class="border1 list-border"></view>
+                <view class="border2 list-border"></view>
+                <view class="border3 list-border"></view>
+                <view class="border4 list-border"></view>
+            </view>
+        </view>
+
+        <view class="order-contain">
+            <view class="title">今日开放实验室</view>
+            <view class="list">
+                <view class="item" wx:for="{{orderList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    <view class="content" bindtap="labdetail" id="{{item.labid}}">
+                        <view class="text">{{item.labname}}</view>
+                        <view class="status">已开放</view>
+                    </view>
+                    <view class="time">容量：{{item.labseats}}</view>
+                </view>
+                <view class="no-more">宝宝是有底线的好嘛</view>
+            </view>
+        </view>
+    </view>
+</view>

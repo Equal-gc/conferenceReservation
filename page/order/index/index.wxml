@@ -1,0 +1,50 @@
+<view class='myOrder'>
+	<view class="item">
+		<view class="title">当前预约</view>
+    <view class="order-contain">
+            <view class="list">
+                <view class="item" wx:for="{{nowList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    <view class="content"  >
+                           <view class="text">实验室：{{item.labname}}</view>
+                        <view class="status">节次：{{item.section}}</view>  <view bindtap="bookconcel" id="{{item.id}}" class="sstatus">取消</view>  <view bindtap="bookdetail" id="{{item.id}}" class="sstatus">签到</view>
+                    </view>
+                  <view class="time">应签日期:{{item.date}}___预约日期:{{item.booktime}}</view>
+                </view>
+            </view></view>
+	</view>
+
+<view class="item">
+		<view class="title">违纪预约</view>
+    <view class="order-contain">
+            <view class="list">
+                <view class="item" wx:for="{{brokeList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    <view class="content">
+                        <view class="text">实验室：{{item.labname}}</view>
+                        <view class="status">节次：{{item.section}}</view>
+                    </view>
+                    <view class="time">应签日期：{{item.date}}：未签到</view>
+                </view>
+            </view></view>
+	</view>
+
+  <view class="item">
+		<view class="title">历史预约</view>
+      <view class="order-contain">
+            <view class="list">
+                <view class="item" wx:for="{{historyList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    <view class="content">
+                        <view class="text">实验室：{{item.labname}}</view>
+                        <view class="status">节次：{{item.section}}</view>
+                    </view>
+                    <view class="time">{{item.conformtime}}:已签到</view>
+                </view><view class="no-more">Will, work and wait are the pyramidal cornerstones for success</view>
+            </view>
+          </view>
+	</view></view>
+
+ <modal id="{{bookid}}" hidden="{{hiddenmodalput}}" title="当天现场发验证码签到" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+      <input type='text'bindinput='ipsd' placeholder="输入验证码"/>
+  </modal>
+
+   <modal id="{{bookid}}" hidden="{{hiddenmodalput2}}" title="是否取消预约" confirm-text="确认取消" cancel-text="再想想" bindcancel="cancel2" bindconfirm="confirm2">  
+  </modal>  

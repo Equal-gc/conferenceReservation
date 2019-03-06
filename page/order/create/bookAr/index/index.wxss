@@ -1,0 +1,16 @@
+/* page/order/create/bookAr/index/index.wxss */
+page{
+    background-color: #f4f4f4
+}
+.body{
+  margin:8px;
+}
+.title{
+  text-align:center;
+  font-size: 22px;
+  margin: 5px;
+}
+.bookrule{
+  margin:2px 8px 5px 8;
+  font-size:18px;
+}

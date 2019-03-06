@@ -1,0 +1,10 @@
+<view class="body">
+<view class="title">
+实验室预约规则
+</view>
+<!-- <view class="bookrule">
+{{appointmentrules}}
+</view> -->
+<rich-text nodes="{{appointmentrules}}"></rich-text>
+ <view class="no-more">良好的习惯成就亮丽的人生风景线</view>
+</view>

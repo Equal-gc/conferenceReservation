@@ -1,0 +1,54 @@
+<!--src/page/user/msg/index.wxml-->
+
+<form bindsubmit="submitForm">
+<view class='box_col_1 fl listview bgcolor10'>
+  <view class='padding2'>
+    <text class='fl'>学号：</text>
+    <view class='fl'>
+       <input value="{{userinfo.schoolno}}" class="weui-input" type="number" placeholder="请输入您的学号" bindinput='txtChanged' id='1'/>
+    </view>
+  </view>
+</view>
+
+<view class='box_col_1 fl listview bgcolor10 border_t'>
+  <view class='padding2'>
+    <text class='fl'>姓名：</text>
+    <view class='fl'>
+       <input class="weui-input" type="text" placeholder=""  bindinput='txtChanged' id='2' value='{{userinfo.name}}'/>
+    </view>
+  </view>
+</view>
+
+<view class='box_col_1 fl listview bgcolor10 border_t'>
+  <view class='padding2'>
+    <text class='fl'>学院：</text>
+    <view class='fl'>
+       <input  class="weui-input" type="text" placeholder="请输入您的学院"  bindinput='txtChanged'  id='3' value='{{userinfo.college}}'/>
+    </view>
+  </view>
+</view>
+
+<view class='box_col_1 fl listview bgcolor10 border_t'>
+  <view class='padding2'>
+    <text class='fl'>专业：</text>
+    <view class='fl'>
+       <input  class="weui-input" type="text" placeholder="请输入您的专业"  bindinput='txtChanged'  id='4' value='{{userinfo.major}}'/>
+    </view>
+  </view>
+</view>
+
+<view class='box_col_1 fl listview bgcolor10 border_t'>
+  <view class='padding2'>
+    <text class='fl'>联系电话：</text>
+    <view class='fl'>
+       <input  type="tel" placeholder="请输入联系人电话"  bindinput='txtChanged' id='5' value='{{userinfo.phone}}'/>
+    </view>
+  </view>
+</view>
+
+
+<view class='hr10'></view>
+<button class="button bgcolor font16" bindtap='clickButtonCommit'>提交信息</button>
+<view class='hr20'></view>
+
+</form>

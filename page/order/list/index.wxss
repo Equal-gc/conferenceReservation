@@ -1,0 +1,138 @@
+page{
+    background-color: #f7f7f7;
+}
+
+.orderListAll{
+	border-top: 0.5rpx solid #3d667a;
+}
+
+.title{
+	margin: 20rpx 0;
+	padding: 0 24rpx;
+	height: 77rpx;
+	line-height: 77rpx;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
+	color: #4b4b4b;
+	background: #fff;
+}
+
+.num{
+	color: #727272;
+	font-size: 24rpx;
+}
+
+.num i{
+	color: #dc2121;
+}
+
+.item{
+	padding: 0 24rpx 41rpx 24rpx;
+	margin-bottom: 20rpx;
+	background: #fff;
+}
+.item-title{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 19rpx;
+}
+
+.item-title-type{
+	width: 170rpx;
+	height: 59rpx;
+	line-height: 59rpx;
+	border-radius: 0px 10px 25px 5px;
+	color: #fff;
+	font-size: 30rpx;
+	text-align: center;
+}
+
+.item-title-type0{
+	background-color: #418a61;
+}
+.item-title-type1{
+	background-color: #3d667a;
+}
+.item-title-type2{
+	background-color: #fcd667;
+}
+
+.item-title-countDown{
+	color: #535353;
+	font-size: 28rpx;
+	margin-top: 8rpx;
+}
+.item-title-countDown i{
+	width: 44rpx;
+	height: 44rpx;
+	line-height: 44rpx;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 24rpx;
+	color: #fff;
+	margin-left: 18rpx;
+	position: relative;
+}
+.item-title-countDown i:after{
+	position: absolute;
+	right: -14rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	content: ':';
+	color: #3d667a;
+}
+
+.item-title-countDown i:last-child:after{
+	position: absolute;
+	right: -14rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	content: '';
+}
+
+.content-item{
+	font-size: 28rpx;
+	color: #7d7d7d;
+	margin-bottom: 5rpx;
+	padding: 0 20rpx;
+}
+
+.content-item i{
+	color: #4b4b4b;
+}
+
+.content-item .reason{
+	color: #dc2121;
+}
+
+.content-item i{
+	color: #e0c788;
+}
+
+.btn{
+	display: flex;
+	justify-content: space-between;
+	width: 400rpx;
+	margin: 37rpx auto 0;
+}
+
+.btn-item{
+	height: 66rpx;
+	line-height: 66rpx;
+	width: 180rpx;
+	text-align: center;
+	color: #3d667a;
+	font-size: 24rpx;
+	border: solid 1px #3d667a;
+}
+
+.btn-item2{
+	width: 100%;
+}
+
+.btn-item3{
+	border: solid 1px #c9c9c9;
+	color: #c9c9c9;
+}

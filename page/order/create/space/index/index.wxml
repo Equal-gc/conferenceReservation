@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="container-home">
+        <!-- 轮播图 -->
+        <view class="swiper-contain">
+        	<swiper 
+        		class="swiper" 
+        		indicator-dots="true" 
+        		autoplay="true" 
+        		interval="3000" 
+        		duration="1000"
+    		>    
+    	        <block wx:for="{{advs}}" wx:key="unique">    
+    		        <swiper-item>    
+    		            <image 
+                            src="{{item}}" class="slide-image image_pic" 
+                            mode="aspectFill"
+                        /> 
+    		        </swiper-item>    
+    	        </block> 
+    	    </swiper>
+        </view>
+        <view class="order-contain">
+            <view class="title">计算机系实验室一览</view>
+            <view class="list">
+                <view class="item" wx:for="{{orderList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    <view class="content" bindtap="labdetail"  id="{{item.labid}}">
+                        <view class="text">{{item.labname}}</view>
+                        <view class="text">详细介绍</view>
+                    </view>
+                </view>
+                <view class="no-more">一寸光阴一寸金，寸金难买寸光阴</view>
+            </view>
+        </view>
+    </view>
+</view>

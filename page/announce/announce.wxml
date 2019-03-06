@@ -1,0 +1,13 @@
+<view class="body">
+<view class="announcetitile">
+{{notice.announcementtitle}}
+</view>
+<view class="announcementtime">
+{{notice.announcementtime}}
+</view>
+<view class="announcedetail">
+<rich-text nodes="{{notice.announcementcontent}}"></rich-text>
+
+</view>
+
+</view>

@@ -1,0 +1,20 @@
+page{
+    background-color: #f4f4f4
+}
+.body{
+  margin:8px;
+}
+.announcetitile{
+  text-align:center;
+  font-size: 22px;
+  margin: 5px;
+}
+.announcementtime{
+  text-align:center;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.announcedetail{
+  margin:2px 8px 5px 8;
+  font-size:18px;
+}

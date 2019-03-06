@@ -1,0 +1,21 @@
+/* src/page/user/msg/index.wxss */
+/* pages/center/AskVendor/AskVendor.wxss */
+.shenfenzheng{ width: 100%; height: 200rpx;}
+.shenfenzheng .icon{ height: 200rpx;}
+.shenfenzhengHave{ width: 100%; height: 280rpx;}
+.viShowBack{
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: fixed;
+  background:rgba(0, 0, 0, 0.5);
+}
+.viShowUp{
+  width: 100%;
+  height: 30%;
+}
+.viShowDown{
+  width: 100%;
+  height: 70%;
+  background: white;
+}

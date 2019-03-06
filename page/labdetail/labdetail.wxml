@@ -1,0 +1,31 @@
+<view class="swiper-contain">
+        	<swiper 
+        		class="swiper" 
+        		indicator-dots="true" 
+        		autoplay="true" 
+        		interval="3000" 
+        		duration="1000"
+    		>    
+    	        <block wx:for="{{advs}}" wx:key="unique">    
+    		        <swiper-item>    
+    		            <image 
+                            src="{{item}}" class="slide-image image_pic" 
+                            mode="aspectFill"
+                        /> 
+    		        </swiper-item>    
+    	        </block> 
+    	    </swiper>
+</view>
+<view class="body">
+
+<view class="labname">
+{{lab.labname}}
+</view>
+<view class="labbuilding">
+可容纳人数：{{lab.labseats}}
+</view>
+<view class="labintroduction">
+<rich-text nodes="{{lab.labintroduction}}"></rich-text>
+</view>
+     <view class="no-more">宝剑锋从磨砺出，梅花香自苦寒来</view>
+</view>

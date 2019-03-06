@@ -1,0 +1,94 @@
+page{
+    background-color: #f7f7f7;
+}
+.myOrder{
+	padding-top: 20rpx;
+	border-top: 0.5rpx solid #3d667a;
+}
+
+.item{
+	padding: 25rpx 24rpx 0 24rpx;
+	background: #fff;
+	text-align: center;
+	font-size: 24rpx;
+}
+
+.title{
+	height: 56rpx;
+	line-height: 56rpx;
+	width: 140rpx;
+	color: #fff;
+	border-radius: 5px 27px 27px 10px;
+	margin-bottom: 29rpx;
+}
+
+.item:first-child .title{
+	background-color: #76a5bd;
+}
+.item:nth-child(2) .title{
+	background-color: #e09a88;
+}
+.item:last-child .title{
+	background-color: #e0c788;
+}
+
+.item-content{
+	display: flex;
+	border-bottom: 0.5rpx solid #ddd;
+	padding-bottom: 24rpx;
+}
+
+.item:last-child .item-content{
+	border-bottom: none;
+}
+.item-detail{
+	width: 25%;
+	color: #535353;
+}
+
+.img{
+	width: 40rpx;
+	height: 40rpx;
+}
+
+/*预约订单列表*/
+.order-contain{
+	padding: 0 24rpx;
+	font-size: 30rpx;
+	color: #4b4b4b;
+}
+.order-contain .title{
+	position: relative;
+	text-align: center;
+	width: 270rpx;
+	/* border-bottom: 1rpx solid #4b4b4b; */
+	height: 50rpx;
+	line-height: 50rpx;
+	margin: 0 auto 21rpx;
+	font-size: 30rpx;
+}
+.order-contain .item{
+	padding: 14rpx 34rpx;
+}
+.order-contain .item:nth-child(2n+1){
+	background-color: #eaf2f6;
+}
+.order-contain .item .content{
+	display: flex;
+	justify-content: space-between;
+	font-size: 24rpx;
+}
+.time{
+	font-size: 22rpx;
+	color: #979797;
+	margin-top: 8rpx;
+}
+.itemdetail{
+  float:right;
+}
+.sstatus{
+  font-size: 28rpx;
+	color: rgb(12, 166, 238);
+ 	border-bottom: 0.5rpx solid rgb(66, 235, 23);
+   margin-top: 6rpx;
+}
