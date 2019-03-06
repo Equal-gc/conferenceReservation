@@ -1,0 +1,6 @@
+<view class='auth'>
+    <view class="item">
+        <view class="label">座位预约：</view>
+        <view class="content">{{seatDetial}}</view>
+    </view>
+</view>

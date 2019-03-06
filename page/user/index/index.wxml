@@ -1,0 +1,42 @@
+<view class='my'>
+    <!-- 顶部 -->
+    <view class="top">
+        <view class="user">
+        <open-data type="userAvatarUrl" class="headImg"></open-data>
+            <view class="msg">
+                <view class="userName">昵称：<open-data type="userNickName" lang="zh_CN"></open-data></view>
+                 <view class="test">预约之前务必完善个人信息</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="icon-list first">
+        <view class="icon-item" bindtap="setUserMsg">
+            <i class="iconfont icon-lock"></i>
+            <view class="text">完善个人信息</view>
+        </view>
+        <view class="icon-item" bindtap="goToMyAuth">
+            <i class="iconfont icon-crown"></i>
+            <view class="text">我的权限</view>
+        </view>
+         <view class="icon-item" bindtap="resetPassword">
+            <i class="iconfont icon-notice"></i>
+            <view class="text">联系管理员</view>
+        </view>
+        <view class="icon-item" bindtap="goToBoard">
+            <i class="iconfont icon-headset"></i>
+            <view class="text">留言反馈</view>
+        </view>
+    </view>
+    <!--弹出框-->
+    <modal 
+        title="刘老师：153133121777"
+        hidden="{{hiddenModal}}"
+        confirm-text="确认"
+        cancel-text="取消"
+        bindconfirm="listenerCancel"
+        bindcancel="listenerCancel" 
+    ></modal>
+</view>
+ <view class="no-more"> </view> <view class="no-more"> </view> <view class="no-more"> </view>
+ <view class="no-more">有志者事竟成</view>

@@ -1,0 +1,27 @@
+/* pages/suggest/suggest.wxss */
+.suggestBox{
+  width: 80%;
+  height: 200px;
+  border: 1px solid #686868;
+  margin:20px auto;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+.suggestInput{
+  margin: 5px 10px 5px 10px;
+  line-height: 20px;
+  /* height: auto; */
+}
+.phoneNumberBox{
+  border: 1px solid #686868;
+  border-radius: 10px;
+  width: 80%;
+  margin: 5px auto;
+  padding: 0 5px;
+}
+.phoneNumberInput{
+  padding:0 5px;
+}
+button{
+  width: 20%;
+}

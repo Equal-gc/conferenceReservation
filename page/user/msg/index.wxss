@@ -1,0 +1,101 @@
+/* src/page/user/msg/index.wxss */
+/* pages/center/AskVendor/AskVendor.wxss */
+.shenfenzheng{ width: 100%; height: 200rpx;}
+.shenfenzheng .icon{ height: 200rpx;}
+.shenfenzhengHave{ width: 100%; height: 280rpx;}
+.viShowBack{
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: fixed;
+  background:rgba(0, 0, 0, 0.5);
+}
+.viShowUp{
+  width: 100%;
+  height: 30%;
+}
+.viShowDown{
+  width: 100%;
+  height: 70%;
+  background: white;
+}
+.tips2{
+  color: rgb(77, 22, 230);
+  font-size: 16px;
+  width: 70%;
+  margin: 8px auto;
+}
+.tips{
+  color: red;
+  font-size: 15px;
+  width: 70%;
+  margin: 8px auto;
+}
+.title{
+  float: left;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.line_1{
+  margin:6px;
+  /* float: left; */
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.line_33{
+  margin-left:20rpx;
+  font-size: 30rpx;
+}
+.content{
+  width: 80%;
+  margin:20px auto;
+}
+.button{
+  width: 25%;
+  background-color: rgb(232, 243, 243);
+  margin-left:40%;
+  margin-top: 50rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+}
+radio{
+  transform:scale(0.9);
+  /* background: red; */
+}
+.radio-group{
+  /* background: blue; */
+  color: rgb(5, 5, 5);
+  width: 70%;
+  margin: 0 auto;
+  float: left;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  
+}
+.radio-group1{
+color: rgb(25, 45, 223);
+  width: 70%;
+  margin: 8px auto;
+   font-size: 25rpx;
+}
+.selectpick{
+  height: 50rpx;
+  width: 90%;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  line-height:50rpx; 
+
+}
+.school{
+  /* background: red; */
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.inputtel{
+  font-size: 30rpx;
+  /* background: red; */
+}
+.hr10{
+  margin-top: 100rpx;
+  /* background: red; */
+}

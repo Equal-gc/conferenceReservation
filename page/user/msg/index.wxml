@@ -1,0 +1,79 @@
+<!--src/page/user/msg/index.wxml-->
+<view class='body'>
+<form bindsubmit="submitForm">
+<!-- <view >
+<radio-group class="radio-group1"  bindchange="radioChange">
+  <text>审核状态：</text>   
+  <label class="radio" wx:if="{{userinfo.isapproved=='2'}}">
+    <radio value="1"  checked="true"/>待完善
+  </label>
+   <label class="radio" wx:if="{{userinfo.isapproved=='0'}}">
+    <radio value="0"  checked="true"/>审核中
+  </label>
+</radio-group>
+</view> -->
+<view class='tips'>
+<text>务必填写真实信息才能通过审核</text>    
+</view>
+
+<view class="content">
+
+<view class='line_1'> 
+  <label class='title'>学号/工号：</label>
+  <input value="{{userinfo.schoolno}}" class="weui-input" type="number" placeholder="请输入您的学号"  bindinput='txtChanged' id='1'/>
+</view>
+
+<view class='line_1'>
+  <label class='title'>姓名：</label>
+    <input class="weui-input" type="text" placeholder=""  bindinput='txtChanged' id='2' value='{{userinfo.name}}' placeholder="请输入您的姓名"/>
+</view>
+<!-- 
+<view class='line_1'>
+  <label class='title'>学院专业：</label>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      {{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view> -->
+
+<view class='line_33'>
+  <label class='school'>学院专业：</label>
+  <picker class="selectpick" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      {{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view>
+<view class='line_1'>
+  <label class='title'>手机：</label>
+  <input  class="inputtel" type="tel" placeholder="请输入联系人电话"  bindinput='txtChanged' id='5' value='{{userinfo.phone}}'/>
+</view>
+<!-- <view class='line_1'>
+  <label class='title'>手机：</label>
+  <input  type="tel" placeholder="请输入联系人电话"  bindinput='txtChanged' id='5' value='{{userinfo.phone}}'/>
+</view> -->
+<view>
+<view>  <view class='line_1'>
+  <label class='title'>身份：</label></view>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:if="{{userinfo.isstu!='0'}}">
+    <radio value="1"  checked="true"/>学生
+    <radio value="0"/>教师
+  </label>
+   <label class="radio" wx:if="{{userinfo.isstu=='0'}}">
+    <radio value="1"/>学生
+    <radio value="0"  checked="true"/>教师
+  </label>
+</radio-group>
+</view>
+</view>
+</view>
+
+<view class='hr10'></view>
+<button class="button bgcolor font16" bindtap='clickButtonCommit'>提交</button>
+<view class='hr20'></view>
+</form>
+ <view class="no-more"></view> <view class="no-more"></view>
+ <view class="no-more">骏马是跑出来的,强兵是打出来的!</view>
+</view>

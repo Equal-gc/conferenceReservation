@@ -1,0 +1,14 @@
+<view class="suggest">
+  
+  <!-- 建议输入框 -->
+  <view class="suggestBox" bindtap="suggestFocus">
+    <textarea name="suggestInput" type="text" class="suggestInput" placeholder="请输入建议" bindblur='suggestInput' value="{{suggestion}}" bindinput='suggestInput' >
+    </textarea>
+  </view> 
+  <!-- <view class="phoneNumberBox" bindtap="phonenumberFocus">
+    <input name="phoneNumberinput" type="text" class='phoneNumberInput' placeholder="请输入手机号" bindinput="phoneNumberinput"  value="{{phonenumber}}" focus="{{phonenumber_focus}}" bindblur='phoneNumberinput' ></input>
+  </view> -->
+  <!-- <button class="test" bindtap='testfunc'>heheda</button> -->
+  <button bindtap="submitClick" class="fb-btn" style="background-color:{{tcolor}}" >提交</button>
+</view>
+
