@@ -1,0 +1,19 @@
+<view class="signinstate">
+  <view class="signinhead">
+    <image class="signinheadimag" src="{{signinheadimag_src}}" ></image>
+    <view class="signinnickname">{{ signinnickname }}</view>
+  </view>
+  <view class="signincontent">
+    <view class="signintext">{{ signintext }}</view>
+    <!-- <image class="signinimage" src="{{signinimage_src}}" mode="widthFix"></image> -->
+  </view>
+  <view class="signinfoot">
+    <image class="ilike" src="../../pages/image/ilike.png" mode='widthFix' ></image>
+    <view class="likenum">{{ likenum }}</view>
+    <image class="comment" src="../../pages/image/comment.png" mode='widthFix'></image>
+    <view class="commentnum">{{ commentnum }}</view>
+  </view>
+
+
+<slot></slot>
+</view>

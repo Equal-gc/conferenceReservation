@@ -1,0 +1,50 @@
+.signinstate{
+  padding:3%;
+}
+.signinheadimag{
+  width:3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.signinhead{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+}
+.signincontent{
+  padding-top: 3%;
+}
+.signintext{
+  padding-bottom: 0.5rem;
+  width:100%;
+  word-break:break-all;
+}
+.signinimage{
+  width:100%;
+}
+.signinfoot{
+  position:absolute;
+  width: 260rpx;
+  right: 3%;
+}
+.ilike{
+  width: 60rpx;
+  float: left;
+}
+.likenum{
+  width: 70rpx;
+  height: 60rpx;
+  float: left;
+  line-height: 60rpx;
+}
+.comment{
+  width: 60rpx;
+  float: left;
+}
+.commentnum{
+  width: 70rpx;
+  height: 60rpx;
+  float: left;
+  line-height: 60rpx;
+}

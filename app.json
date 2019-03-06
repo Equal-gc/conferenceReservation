@@ -1,0 +1,65 @@
+{
+  "pages":[
+   
+
+    "page/home/index/index",
+    "page/order/create/seat/index/index",
+    "page/order/create/space/index/index",
+    "page/order/remind/index",
+    "page/order/index/index",
+    "page/user/index/index",
+    "page/user/msg/index",
+  "page/user/msgupdate/msgupdate",
+    "page/user/service/index",
+    "page/user/serviceOnline/index",
+    "page/user/noticeList/index",
+    "page/user/noticeDetail/index",
+    "page/user/auth/index",
+    "page/user/qrcode/index",
+    "page/user/bindWechat/index",
+    "page/user/changeCount/index",
+    "page/user/passwordReset/index",
+    "page/user/passwordForget/index",
+    "page/order/create/seat/confirm/index",
+
+    "page/order/create/bookAr/index/index",
+    "page/order/listCurrent/index",
+    "page/announce/announce",
+    "page/labdetail/labdetail",
+    "page/order/list/index"
+    
+    
+ 
+    
+  ],
+ "window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ED414A",
+  "navigationBarTitleText": "",
+  "navigationBarTextStyle": "#fff"
+},
+ "tabBar": {
+  "selectedColor": "#ED414A",
+  "color": "#333",
+  "list": [
+    {
+      "pagePath": "page/home/index/index",
+      "text": "首页",
+      "iconPath": "resource/images/tabbarIcon/home.png",
+      "selectedIconPath": "resource/images/tabbarIcon/home-active.png"
+    },
+    {
+      "pagePath": "page/order/index/index",
+      "text": "我的预约",
+      "iconPath": "resource/images/tabbarIcon/myreser.png",
+      "selectedIconPath": "resource/images/tabbarIcon/myreser-active.png"
+    },
+    {
+      "pagePath": "page/user/index/index",
+      "text": "个人中心",
+      "iconPath": "resource/images/tabbarIcon/head.png",
+      "selectedIconPath": "resource/images/tabbarIcon/head-active.png"
+    }
+    ]
+}
+}
